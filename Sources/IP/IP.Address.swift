@@ -89,6 +89,6 @@ extension IP.Address
     @inlinable public
     static func / (self:Self, bits:UInt8) -> IP.Block<Self>
     {
-        .init(base: self.zeroMasked(to: bits), bits: bits)
+        .init(base: self, bits: bits)
     }
 }
